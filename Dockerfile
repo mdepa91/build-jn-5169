@@ -8,4 +8,6 @@ ENV TOOLCHAIN_DIR /toolchain
 RUN mkdir -p ./${TOOLCHAIN_DIR} && \
       wget -q https://github.com/openlumi/BA2-toolchain/releases/download/20201219/ba-toolchain-20201219.tar.bz2 -O - | tar -jx -C ./${TOOLCHAIN_DIR}
 
+ENV TOOLCHAIN_PREFIX /toolchain/ba-toolchain
+
 WORKDIR /app
