@@ -1,6 +1,6 @@
 FROM python:3.11
 
-ENV TOOLCHAIN_DIR ./toolchain
+ENV TOOLCHAIN_DIR /toolchain
 
 WORKDIR /app
 
